@@ -1,0 +1,216 @@
+{
+	"easycom": {
+		 "autoscan": true,
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			"^vue-(.*)":"vue-qr/dist/vue-qr-$1.js"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+		    "path" : "pages/first-page/first-page",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "知行互助",
+				"navigationStyle":"custom",
+				"disableScroll":true
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/xk-pilot-page/xk-pilot-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				 "disableScroll":true,
+				 "onReachBottomDistance":300
+            }
+            
+        }
+        ,{
+            "path" : "pages/help-data-datail/help-data-datail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        }
+        ,{
+            "path" : "pages/stu-evaluate/stu-evaluate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/pilot-page/pilot-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        }
+        ,{
+            "path" : "pages/publish-help-data/publish-help-data",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        }
+        ,{
+            "path" : "pages/pilot-class-page/pilot-class-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pilot-class-sign-page/pilot-class-sign-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle":"custom",
+                "enablePullDownRefresh": false,
+				"backgroundColor":"#F2F2F2"
+            }
+            
+        }
+        ,{
+            "path" : "pages/pilot-creat-record/pilot-creat-record",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+        },
+		{
+		    "path" : "pages/rank-list/rank-list",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/manager-page/manager-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        }
+        ,{
+            "path" : "pages/mg-help-record/mg-help-record",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        },
+		{
+		    "path" : "pages/apply-poilt/apply-poilt",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+		    }
+		    
+		}
+		
+        ,{
+            "path" : "pages/master-apply/master-apply",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin-self-page/admin-self-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/import-studata-page/import-studata-page",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/ad-look-class-detail/ad-look-class-detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        }
+        ,{
+            "path" : "pages/import-friend-data/import-friend-data",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"disableScroll":true
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

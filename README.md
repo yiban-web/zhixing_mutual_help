@@ -1,4 +1,4 @@
-### 执行互助小程序项目
+### 知行互助小程序项目
 
 1. npm init -y
    cnpm install （没有cnpm的先下载npm i -g cnpm --registry=https://registry.npm.taobao.org）
